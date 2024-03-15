@@ -1,8 +1,6 @@
 [build]
-publish = "/"
+publish = "dist/"
 command = "rustup toolchain install nightly && rustup target add wasm32-unknown-unknown && cargo install cargo-make --force && cargo make build"
 
-# Environment variables can be specified here
 [build.environment]
-# Set the Rust toolchain version
 RUST_VERSION = "1.78.0"
