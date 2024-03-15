@@ -1,0 +1,12 @@
+[build]
+# Specify the command to build your project
+command = "cargo build --release && cargo leptos build"
+
+# Specify the directory where the build output is located.
+# Adjust the path according to your project structure.
+publish = "dist"
+
+# Environment variables can be specified here
+[build.environment]
+# Set the Rust toolchain version
+RUST_VERSION = "1.78.0"
