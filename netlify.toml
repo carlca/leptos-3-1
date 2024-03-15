@@ -1,10 +1,6 @@
 [build]
-# Specify the command to build your project
-command = "cargo build --release && cargo leptos build"
-
-# Specify the directory where the build output is located.
-# Adjust the path according to your project structure.
-publish = "dist"
+publish = "dist/"
+command = "rustup toolchain install nightly && rustup target add wasm32-unknown-unknown && cargo install cargo-make --force && cargo make build"
 
 # Environment variables can be specified here
 [build.environment]
