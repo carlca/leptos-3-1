@@ -1,6 +1,7 @@
 [build]
 publish = "/"
-command = "rustup toolchain install nightly && rustup target add wasm32-unknown-unknown && cargo install cargo-make --force && cargo make build"
+# command = "rustup toolchain install nightly && rustup target add wasm32-unknown-unknown && cargo install cargo-make --force && cargo make build"
+command = "rustup toolchain install nightly && rustup target add wasm32-unknown-unknown && cargo install cargo-make --force && trunk serve"
 
 # Environment variables can be specified here
 [build.environment]
