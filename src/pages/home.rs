@@ -19,6 +19,7 @@ pub fn Home() -> impl IntoView {
                       .map(|(_, e)| view! { <li>{e.to_string()}</li> })
                       .collect_view()
               }}
+
             </ul>
           }
       }>
